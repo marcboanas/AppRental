@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-BaseApplication::Application.config.secret_token = '68e350e59baea6e78ce2c705e1c2f8d684187ca305b5dc96493a321eb2405819cf601d4029ce38f63dba33ddeea0fc20e9a4a9cf8026166c33d0e75cf07b4760'
+BaseApp::Application.config.secret_token = '3e1fb5936b409f89d21ebf351d49b1a661c6293fd128644bde77f085b6ce2455d12e04ac45dc6590a267921f96bc561681f2b3a680a2a174447813cde2cf5e42'
