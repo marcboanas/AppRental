@@ -1,6 +1,6 @@
 <% provide(:title, @user.name) %>
 
-<% if !signed_in? %>
+<% if signed_in? %>
 
 <%= @user.name %>, <%= @user.email %>
 
