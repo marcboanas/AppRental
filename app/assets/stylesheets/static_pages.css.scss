@@ -1,3 +1,305 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@font-face {
+    font: {
+       family: 'handdrawn';
+       weight: 'normal';
+       style: 'normal';
+       -webkit-font-smoothing: antialiased;
+    }
+    src: asset-url('handdrawn.eot', font);
+    src: asset-url('handdrawn.eot', font) format('embedded-opentype'),
+         asset-url('handdrawn.woff', font) format('woff'),
+         asset-url('handdrawn.ttf', font) format('truetype'),
+         asset-url('handdrawn.svg#handdrawn', font) format('svg')
+}
+
+div.title {
+background: orange;
+width: 600px;
+padding: 20px;
+position: relative;
+float: left;
+}
+
+div.account {
+float: right;
+width: 200px;
+height: 60px;
+position: relative;
+padding: 20px;
+padding-top: 0px;
+background: blue;
+    ul {
+    margin-left: -20px;
+    }
+    li {
+    list-style: none;
+    font-family: 'Lucida Grande';
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    }
+}
+
+div.account:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 15px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid blue;
+	border-left: 30px solid transparent;
+}
+
+div.title:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid orange;
+	border-right: 30px solid transparent;
+}
+
+div.handdrawn {
+font-family: 'Lucida Grande';
+font-size: 24px;
+font-weight: bold;
+color: white;
+}
+
+div.main {
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
+background: white;
+position: relative;
+height: 5500px;
+border-left: 1px solid #b3b3b3;
+border-right: 1px solid #b3b3b3;
+padding: 20px;
+
+-moz-box-shadow: 0 0 3px 3px #ccc;
+-webkit-box-shadow: 0 0 3px 3px #ccc;
+box-shadow: 0 0 3px 3px #ccc;
+z-index: -3;
+
+}
+
+div.text {
+font-family: 'Lucida Grande';
+font-size: 40px;
+color: black;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+bargin-bottom: 10px;
+width: 950px;
+float: left;
+z-index: 0;
+}
+
+div.image {
+margin-top: -50px;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: 500px;
+background-image: url(/images/wash-dry-dish2.jpg);
+background-repeat: no-repeat;
+background-position:center; 
+position: relative;
+float: left;
+z-index: -1;
+}
+
+div.text-overlay {
+position: absolute;
+top: 200px;
+left: 340px;
+font-family: handdrawn;
+font-size: 110px;
+color: black;
+    &.second {
+    left: 620px;
+    }
+}
+
+div.button {
+font-family: 'Lucida Grande';
+font-size: 13px;
+color: white;
+position: absolute;
+bottom: 50px;
+left: 130px;
+height: 30px;
+line-height: 30px;
+width: 150px;
+border: 2px solid black;
+background: red;
+border-radius: 4px;
+text-align: center;
+    &.second {
+    left: 420px;
+    }
+    &.third {
+    left: 710px;
+    }
+}
+
+div.line-break {
+height: 1px;
+width: 100%;
+background: black;
+float: left;
+position: relative;
+margin-bottom: 20px;
+}
+
+div.appliances {
+float: left;
+width: 100%;
+height: auto;
+background: none;
+margin-bottom: 20px;
+}
+
+div.subtitle {
+font-family: 'Lucida Grande';
+width: 980px;
+background: blue;
+line-height: 30px;
+position: relative;
+font-size: 20px;
+color: white;
+padding: 10px;
+font-weight: bold;
+}
+
+div.appliance {
+float: left;
+width: 240px;
+margin-right: 8px;
+height: 520px;;
+background: white;
+position: relative;
+margin-top: 10px;
+border: 1px solid #c2c2c2;
+padding-top: 10px;
+    img {
+    width: 240px;
+    height: 200px;
+    }
+    h2 {
+    font-family: 'Lucida Grande';
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    }
+    h3 {
+    font-family: 'Lucida Grande';
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    }
+    div.button {
+    height: 30px;
+    width: 160px;
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: orange;
+    font-family: 'Lucida Grande';
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    }
+}
+
+div.key {
+width: 220px;
+height: auto;
+border: 1px solid #c2c2c2;
+background: #f6fafc;
+margin-left: 10px;
+font-size: 11px;
+font-family: 'Lucida Grande';
+    li {
+        list-style: none;
+        padding: 5px;
+        width: 210px;
+        background: none;
+        }
+    li:nth-child(even) {
+    background: white;
+    }
+}
+
+div.boxLeft, div.boxRight {
+width: auto;
+height: 60px;
+line-height: 60px;
+color: white;
+font-family: 'Lucida Grande';
+font-weight: bold;
+font-size: 24px;
+background: #11b5e9;
+float: left;
+position: relative;
+margin-bottom: 50px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+div.boxRight {
+background: #cceefb;
+float: right;
+color: black;
+}
+
+div.boxLeft:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #11b5e9;
+	border-right: 30px solid transparent;
+}
+
+div.boxRight:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 15px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #cceefb;
+	border-left: 30px solid transparent;
+}
+
+div.logo {
+float: left;
+height: 75px;
+width: 375px;
+background-image: url(/images/logo.jpg);
+background-size: 375px 75px;
+background-repeat:no-repeat;
+margin-bottom: 10px;
+}
+
+body {
+margin: 0px;
+background: #f6fafc;
+}
