@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require_tree .
 
+
+$(window).scroll(function() {
+                 
+                 var topPayment = $(this).scrollTop() + 380;
+                 
+                 var topContact = $(this).scrollTop() + 200;
+
+                 $('.paymentTab').css('top', topPayment + "px");
+                 
+                 $('.feedbackTab').css('top', topContact + "px");
+});

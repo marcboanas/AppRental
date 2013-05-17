@@ -80,7 +80,7 @@ margin-right: auto;
 width: 1000px;
 background: white;
 position: relative;
-height: 5500px;
+height: 1700px;
 border-left: 1px solid #b3b3b3;
 border-right: 1px solid #b3b3b3;
 padding: 20px;
@@ -263,7 +263,7 @@ padding-right: 20px;
 
 div.boxRight {
 background: #cceefb;
-float: right;
+float: left;
 color: black;
 }
 
@@ -282,11 +282,11 @@ div.boxRight:after {
     content: "";
     position: absolute;
     bottom: -30px;
-    right: 15px;
+    left: 15px;
 	width: 0;
 	height: 0;
 	border-top: 30px solid #cceefb;
-	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
 }
 
 div.logo {
@@ -297,6 +297,46 @@ background-image: url(/images/logo.jpg);
 background-size: 375px 75px;
 background-repeat:no-repeat;
 margin-bottom: 10px;
+}
+
+div.contact {
+float: right;
+height: 75px;
+width: 375px;
+margin-bottom: 10px;
+background: none;
+font-family: 'Lucida Grande';
+font-weight: bold;
+line-height: 25px;
+font-size: 14px;
+}
+
+div.feedbackTab, div.paymentTab {
+position: absolute;
+font-family: 'Lucida Grande';
+font-weight: bold;
+font-size: 16px;
+color: white;
+line-height: 60px;
+text-align: center;
+left: -60px;
+top: 200px;
+height: 60px;
+width: 160px;
+background: red;
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+transform: rotate(-90deg);
+border-radius: 0 0 5px 5px;
+z-index: 10000;
+}
+
+div.paymentTab {
+top: 380px;
+background: blue;
+display: none;
 }
 
 body {
