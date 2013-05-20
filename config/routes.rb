@@ -7,6 +7,7 @@ BaseApp::Application.routes.draw do
     get 'expense_form', :controller => 'expenses', :action => :expense_form
     get 'summary_boxes', :controller => 'static_pages', :action => :summary_boxes
     
+    resources :contacts
     resources :users do
         member do
             get :following, :followers

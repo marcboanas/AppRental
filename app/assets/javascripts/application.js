@@ -29,21 +29,25 @@ $(window).scroll(function() {
 $(function() {
   
   
-  $('.feedbackTab1').click(function() {
+  $('.contactForm').click(function() {
 	
-	if ( $(this).css('left') != '1165px') {
+	if ( $(this).css('left') != '0px') {
                            
                            $(this).animate({
-                            left: '1165px' 
-                           }, 500)
-	}
-	else {
-        $(this).animate({
-         left: '-60px' 
-        }, 500)		
-		
+                            left: '0px' 
+                           }, 200)
 	}
 
+  });
+  
+  $('.close').click(function() {
+    
+                    $('.contactForm').animate({
+                    
+                    left: '-500px'
+                    
+                    }, 200);
+                    
   });
   
   });

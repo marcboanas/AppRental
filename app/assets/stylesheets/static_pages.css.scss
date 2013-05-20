@@ -356,6 +356,90 @@ background: blue;
 display: none;
 }
 
+div.contactForm {
+position: fixed;
+height: 460px;
+width: 460px;
+top: 150px;
+left: -500px;
+background: red;
+z-index: 100000000;
+cursor: pointer;
+padding: 20px;
+opacity: 0.93;
+
+    input {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px;
+    }
+    
+    input[type=text] {
+    width: 300px !important;
+    }
+    
+    input[type=submit] {
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    width: 150px;
+    line-height: 30px;
+    border: 1px solid black;
+    background: orange;
+    font-family: 'Lucida Grande';
+    font-weight: bold;
+    color: white;
+    display: inline;
+    }
+    
+    textarea {
+    width: 400px !important;
+    height: 200px !important;
+    padding: 5px;
+    font-size: 13px;
+    resize: none;
+    }
+}
+
+div.close {
+width: 150px !important;
+line-height: 30px;
+color: black;
+font-family: 'Lucida Grande';
+font-weight: bold;
+font-size: 14px;
+text-align: center;
+background: white;
+margin-left: 20px;
+padding: 5px;
+display: inline-block;
+border: 1px solid black;
+}
+
+div.contactForm:after {
+content: "Contant Us";
+position: absolute;
+top: 50px;
+width: 160px;
+height: 60px;
+background: red;
+right: -110px;
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+transform: rotate(-90deg);
+border-radius: 0 0 5px 5px;
+text-align: center;
+color: white;
+font-size: 16px;
+font-family: 'Lucida Grande';
+font-weight: bold;
+cursor: pointer;
+line-height: 60px;
+}
+
 body {
 margin: 0px;
 background: #f6fafc;

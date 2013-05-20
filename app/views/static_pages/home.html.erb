@@ -1,4 +1,31 @@
-<div class="feedbackTab1">Contact Us</div>
+<div class="contactForm">
+
+
+
+<%= form_for(@contact) do |f| %>
+
+<%= f.text_field :name, :placeholder => "Name" %>
+
+<%= f.text_field :email, :placeholder => "Email" %>
+
+<%= f.text_field :telephone, :placeholder => "Telephoe Number" %>
+
+<%= f.text_field :reason %>
+
+<%= f.text_area :note, :placeholder => "Write any questions here.." %>
+
+<%= f.submit "submit" %>
+
+
+<div class="close">Close</div>
+
+
+<% end %>
+
+
+
+
+</div>
 
 <div class="paymentTab1">Make a Payment</div>
 
