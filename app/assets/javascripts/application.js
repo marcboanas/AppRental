@@ -18,10 +18,33 @@
 $(window).scroll(function() {
                  
                  var topPayment = $(this).scrollTop() + 380;
-                 
+                
                  var topContact = $(this).scrollTop() + 200;
 
                  $('.paymentTab').css('top', topPayment + "px");
                  
                  $('.feedbackTab').css('top', topContact + "px");
 });
+
+$(function() {
+  
+  
+  $('.feedbackTab1').click(function() {
+	
+	if ( $(this).css('left') != '1165px') {
+                           
+                           $(this).animate({
+                            left: '1165px' 
+                           }, 500)
+	}
+	else {
+        $(this).animate({
+         left: '-60px' 
+        }, 500)		
+		
+	}
+
+  });
+  
+  });
+
