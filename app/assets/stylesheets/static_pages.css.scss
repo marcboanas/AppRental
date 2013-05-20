@@ -33,6 +33,7 @@ position: relative;
 padding: 20px;
 padding-top: 0px;
 background: blue;
+display: none;
     ul {
     margin-left: -20px;
     }
@@ -80,7 +81,7 @@ margin-right: auto;
 width: 1000px;
 background: white;
 position: relative;
-height: 1700px;
+height: 2150px;
 border-left: 1px solid #b3b3b3;
 border-right: 1px solid #b3b3b3;
 padding: 20px;
@@ -88,7 +89,7 @@ padding: 20px;
 -moz-box-shadow: 0 0 3px 3px #ccc;
 -webkit-box-shadow: 0 0 3px 3px #ccc;
 box-shadow: 0 0 3px 3px #ccc;
-z-index: -3;
+
 
 }
 
@@ -105,8 +106,21 @@ float: left;
 z-index: 0;
 }
 
+div.words {
+font-family: 'Lucida Grande';
+font-size: 20px;
+color: black;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+width: 950px;
+float: left;
+z-index: 0;
+}
+
 div.image {
-margin-top: -50px;
+margin-top: 0px;
 margin-left: auto;
 margin-right: auto;
 width: 100%;
@@ -116,7 +130,7 @@ background-repeat: no-repeat;
 background-position:center; 
 position: relative;
 float: left;
-z-index: -1;
+z-index: 0;
 }
 
 div.text-overlay {
@@ -254,8 +268,8 @@ font-family: 'Lucida Grande';
 font-weight: bold;
 font-size: 24px;
 background: #11b5e9;
-float: left;
 position: relative;
+float: left;
 margin-bottom: 50px;
 padding-left: 20px;
 padding-right: 20px;
@@ -297,6 +311,7 @@ background-image: url(/images/logo.jpg);
 background-size: 375px 75px;
 background-repeat:no-repeat;
 margin-bottom: 10px;
+cursor: pointer;
 }
 
 div.contact {
@@ -309,10 +324,11 @@ font-family: 'Lucida Grande';
 font-weight: bold;
 line-height: 25px;
 font-size: 14px;
+cursor: pointer;
 }
 
-div.feedbackTab, div.paymentTab {
-position: absolute;
+div.feedbackTab1, div.paymentTab1 {
+position: fixed;
 font-family: 'Lucida Grande';
 font-weight: bold;
 font-size: 16px;
@@ -331,9 +347,10 @@ background: red;
 transform: rotate(-90deg);
 border-radius: 0 0 5px 5px;
 z-index: 10000;
+cursor: pointer;
 }
 
-div.paymentTab {
+div.paymentTab1 {
 top: 380px;
 background: blue;
 display: none;
