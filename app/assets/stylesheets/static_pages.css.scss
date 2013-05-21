@@ -366,7 +366,7 @@ background: red;
 z-index: 100000000;
 cursor: pointer;
 padding: 20px;
-opacity: 0.93;
+opacity: 0.97;
 
     input {
     display: block;
@@ -381,10 +381,10 @@ opacity: 0.93;
     
     input[type=submit] {
     padding: 5px;
-    font-size: 14px;
+    font-size: 11px;
     text-align: center;
-    width: 150px;
-    line-height: 30px;
+    width: 120px;
+    line-height: 20px;
     border: 1px solid black;
     background: orange;
     font-family: 'Lucida Grande';
@@ -403,15 +403,15 @@ opacity: 0.93;
 }
 
 div.close {
-width: 150px !important;
-line-height: 30px;
+width: 120px !important;
+line-height: 20px;
 color: black;
 font-family: 'Lucida Grande';
 font-weight: bold;
-font-size: 14px;
+font-size: 11px;
 text-align: center;
 background: white;
-margin-left: 20px;
+margin-left: 10px;
 padding: 5px;
 display: inline-block;
 border: 1px solid black;
