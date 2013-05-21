@@ -1,13 +1,20 @@
 <% provide(:title, "Sign in") %>
+
+<div class="main">
+
+<div class="signinBox">
+
 <h1>Sign in</h1>
 
     <%= form_for(:session, url: sessions_path) do |f| %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, :placeholder => "Email" %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, :placeholder => "Password" %>
 
       <%= f.submit "Sign in", class: "" %>
     <% end %>
+    
+</div>
+    
+</div>

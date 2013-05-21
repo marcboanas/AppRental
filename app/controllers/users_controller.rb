@@ -6,10 +6,12 @@ class UsersController < ApplicationController
     
   def show
       @user = User.find(params[:id])
+      @Contacts = Contact.all
   end
     
   def index
       @users = User.paginate(page: params[:page], per_page: 1)
+      
   end
     
   def new
