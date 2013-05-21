@@ -360,7 +360,7 @@ div.contactForm {
 position: fixed;
 height: 460px;
 width: 460px;
-top: 150px;
+top: 350px;
 left: -500px;
 background: red;
 z-index: 100000000;
@@ -399,6 +399,12 @@ opacity: 0.97;
     padding: 5px;
     font-size: 13px;
     resize: none;
+    }
+    
+    select {
+    width: 300px;
+    line-height: 30px;
+    font-size: 16px;
     }
 }
 

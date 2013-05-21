@@ -1,6 +1,6 @@
 <div class="contactForm">
 
-
+<% reasons =[['I would like to rent a washing machine','I would like to rent a washing machine'],['I would like to rent a tumble dryer','I would like to rent a tumble dryer'],['I would like to rent a dishwasher','I would like to rent a dishwasher'],['Other','Other']] %>
 
 <%= form_for(@contact) do |f| %>
 
@@ -10,7 +10,7 @@
 
 <%= f.text_field :telephone, :placeholder => "Telephoe Number" %>
 
-<%= f.text_field :reason %>
+<%= f.select(:reason, options_for_select(reasons), {:prompt => "I'm contacting you beacuse.."}) %>
 
 <%= f.text_area :note, :placeholder => "Write any questions here.." %>
 
