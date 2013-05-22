@@ -356,6 +356,83 @@ display: none;
 }
 
 div.contactForm {
+width: 100%;
+height: 450px;
+background: #cceefb;
+position: relative;
+float: left;
+margin-bottom: 20px;
+    div.contactText {
+    margin: 40px;
+    font-family: 'Lucida Grande';
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    float: left;
+    width: 300px;
+    background: none;
+    line-height: 50px;
+    }
+    div.form {
+    background: #11b5e9;
+    margin: 40px;
+    width: 500px;
+    height: 350px;
+    float: right;
+    position: relative;
+    
+        input {
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 320px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+            &.first {
+            margin-top: 20px;
+            }
+        }
+    
+        textarea {
+        resize: none;
+        margin-left: 20px;
+        padding: 5px;
+        width: 440px;
+        height: 100px;
+        line-height: 20px;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 10px;
+        }
+        
+        select {
+        margin-left: 20px;
+        width: 320px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        }
+        
+        input[type=submit] {
+        width: 250px;
+        }
+
+    }
+    div.form:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #11b5e9;
+	border-right: 30px solid transparent;    
+    }
+}
+
+div.contactForm1 {
 position: fixed;
 height: 460px;
 width: 460px;
@@ -407,7 +484,7 @@ opacity: 0.97;
     }
 }
 
-div.close {
+div.close1 {
 width: 120px !important;
 line-height: 20px;
 color: black;
@@ -422,7 +499,7 @@ display: inline-block;
 border: 1px solid black;
 }
 
-div.contactForm:after {
+div.contactForm1:after {
 content: "Contant Us";
 position: absolute;
 top: 50px;
