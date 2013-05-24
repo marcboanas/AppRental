@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
     def create
         @contact = Contact.new(params[:contact])
         if @contact.save
+            UserMailer.registration_confirmation(@contact).deliver
             redirect_to root_url
         else
             redirect_to root_url
