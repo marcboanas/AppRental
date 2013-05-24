@@ -1,5 +1,4 @@
 class UserMailer < ActionMailer::Base
-    default :from => "enquiries@thompsonsrentals.co.uk"
     
     def registration_confirmation(contact)
         @contact = contact
