@@ -3,6 +3,6 @@ class UserMailer < ActionMailer::Base
     
     def contact_form_confirmation(contact)
         @contact = contact
-        mail(:to => "wildred10@hotmail.com", :subject => "Contact Form Enquiry")
+        mail(:to => "enquiries@thompsonsrentals.co.uk", :subject => "Contact Form Enquiry")
     end
 end
