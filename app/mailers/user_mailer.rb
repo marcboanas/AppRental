@@ -1,8 +1,8 @@
 class UserMailer < ActionMailer::Base
-    default :from => "marcjohnboanas@gmail.com"
+    default :from => "enquiries@thompsonsrentals.co.uk"
     
-    def registration_confirmation(contact)
+    def contact_form_confirmation(contact)
         @contact = contact
-        mail(:to => "#{contact.name} <#{contact.email}>", :subject => "Registered")
+        mail(:to => "<#{contact.email}>", :subject => "Contact Form Enquiry")
     end
 end
