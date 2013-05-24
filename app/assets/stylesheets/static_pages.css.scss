@@ -548,3 +548,18 @@ border-radius: 10px;
     text-align: center;
     }
 }
+
+.alert.alert-success {
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
+height: 60px;
+line-height: 60px;
+font-size: 14px;
+font-family: 'Lucida Grande';
+font-weight: bold;
+color: black;
+background: #77ddbb;
+border: 1px solid black;
+text-align: center;
+}
